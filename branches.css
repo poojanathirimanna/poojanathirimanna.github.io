@@ -1,0 +1,352 @@
+/* Style the branches page (START) */
+.main_branch_body{
+    margin-top: -60px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.branches-main-image-container {
+    background-image: url(/images/Branches/vangelis-tyros-6xeMf4bg0eA-unsplash.jpg);
+    box-shadow: 10px 10px 10px #80808099;
+    height: 870px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -150px;
+}
+
+.branches-main-image-container .small_word ,.rastaurant-main-image-container .small_word{ 
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.branches-main-image-container .large_word ,.rastaurant-main-image-container .large_word{
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.branches-main-image-container section ,.rastaurant-main-image-container section {
+    position: relative;
+    top: 86%;
+    padding: 10px;
+}
+
+.branch_intro{
+    text-align: center;
+}
+
+.branch_intro .tital_top{
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.branch_intro .tital_bottom{
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    margin: 10px 0 30px 0;
+}
+
+.branch_intro .branch_phara{
+    line-height: 1.5rem;
+    padding: 0 40px;
+}
+
+.branch{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 70px 0 50px 0;
+    box-shadow: -5px -5px 20px #80808099, 5px 5px 20px #80808099;
+}
+
+.branch_name_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.branch_name_flex .up_name{
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.branch_name_flex .down_name{
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    margin: 0 0 50px 0;
+}
+
+.branch_img img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.about_branch{
+    display: flex;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.branch_description{
+    width: 60%;
+    line-height: 1.5rem;
+}
+
+.branch_description{
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.branch_description_title{
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+}
+
+.branch_description_text{
+    text-align: left;
+    letter-spacing: 0.04rem;
+    padding: 15px 0 0 8px
+}
+
+.branch_description ul li{
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.branch_map{
+    width: 40%;
+}
+
+/* style branch table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1.5px solid rgb(181, 147, 63);
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgba(128, 128, 128, 0.234);
+}
+
+th {
+    background-color: rgba(128, 128, 128, 0.234);
+}
+
+tfoot .tfooter{
+    background-color: rgba(128, 128, 128, 0.234);
+    font-weight: bold;
+}
+/* Style the branches page (END) */
+.flex_space {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 50px;
+    margin: 50px; */
+  
+}
+.navlinks span {
+    display: none;
+}
+
+
+@media only screen and (max-width:768px) {
+   
+    /* .navlinks span {
+      color: black;
+      display: block;
+      cursor: pointer;
+      line-height: 10vh;
+      font-size: 25px;
+    } */
+
+    
+  }
+ .divA1{
+    width: 100px;
+    height: 30px;
+    /* padding-left: 2rem; */
+    margin: 20px;
+ } 
+ .divB2{
+    width: 100px;
+    height: 30px;
+    /* padding-left: 2rem; */
+    margin: 20px;
+ } 
+ .divC3{
+    width: 100px;
+    height: 30px;
+    /* padding-left: 2rem; */
+    margin: 20px;
+ } 
+ .divD4{
+    width: 100px;
+    height: 30px;
+    /* padding-left: 2rem; */
+    margin: 20px;
+ }
+ 
+ .hide1{
+   display: none;
+ }
+ .img4{
+    width: 350px;
+    height: 200px;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+ }
+ /* Extra Small Devices (Phones) */
+@media only screen and (max-width: 576px) {
+    /* Your CSS rules for extra small screens go here */
+    .img4{
+        width: 100%;
+        height: auto;
+        /* justify-content: center;
+        align-items: center; */
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+     }
+     .main_branch_body{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .branch_name_flex .up_name{
+        font-family: 'Cormorant Garamond', serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 10px;
+        font-weight: 200;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+    
+    .branch_name_flex .down_name{
+        font-family: 'Outfit', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.4rem;
+        margin: 0 0 30px 0;
+    }
+    .about_branch{
+        display: flex;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    
+    
+    .branch_description{
+        width: 100%;
+        line-height: 1rem;
+    }
+    
+    .branch_description{
+        text-align: left;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .branch_description_title{
+        font-family: 'Outfit', sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0.4rem;
+    }
+    
+    .branch_description_text{
+        text-align: left;
+        letter-spacing: 0.04rem;
+        padding: 5px 0 0 4px
+    }
+  }
+  
+  
+  /* Small Devices (Tablets) */
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* Your CSS rules for small screens (tablets) go here */
+    .img4{
+        width: 300px;
+        height: auto;
+        /* justify-content: center;
+        align-items: center; */
+        margin-left: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+     }
+     .main_branch_body{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  }
+  
+  /* Medium Devices (Laptops, Desktops) */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Your CSS rules for medium screens (laptops, desktops) go here */
+    .img4{
+        width: 350px;
+        height: 200px;
+        /* justify-content: center;
+        align-items: center; */
+        margin-left: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+     }
+  }
+  
+  /* Large Devices (Large Desktops, High-Res Monitors) */
+  @media only screen and (min-width: 993px) {
+    /* Your CSS rules for large screens (large desktops, high-res monitors) go here */
+  }
+  

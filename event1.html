@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL GP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <!-- <link rel="stylesheet" href="adventure.css"> -->
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/wr.jpg" type="image/png">
+
+</head>
+
+<body style="background-color: rgba(91, 25, 25, 0.594);">
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <img src = "/images/poojana.png" alt = "room image" style="width: 90px;">  
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>Halloween</h2>
+            <p>Halloween, contraction of All Hallows' Eve, a holiday observed on October 31, the evening before All Saints' (or All Hallows') Day. The celebration marks the day before the Western Christian feast of All Saints and initiates the season of Allhallowtide, which lasts three days and concludes with All Souls' Day.</p>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class = "navbar">
+            <li><a href = "index.html">home</a></li>
+            <li><a href = "branches.html">Branches</a></li>
+            <li><a href = "adventure.html">Adventures</a></li>
+            <li><a href = "resturant.html">Resturant</a></li>
+            <li><a href = "/event1.html">Event 01</a></li>
+        </ul>
+        <button class = "btn sign-up" onclick="book();">Booking</button>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+   
+
+
+    
+
+    <section class="category container">
+
+        <a href="#soup" class="box">
+            <img src="/images/event1/trick.jpeg" alt="">
+            <h3>Trick-or-Treating</h3>
+        </a>
+
+        <a href="#salad" class="box">
+            <img src="/images/event1/salkas.jpeg" alt="">
+            <h3>Costume Parties</h3>
+        </a>
+
+        <a href="#friedrice" class="box">
+            <img src="/images/event1/mmm.jpeg" alt="">
+            <h3>Scary Storytelling</h3>
+        </a>
+
+        <a href="#noodles" class="box">
+            <img src="/images/event1/llsks.jpeg" alt="">
+            <h3>Halloween Parades</h3>
+        </a>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
+                    provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+            </div>
+
+            <div>
+                <h2>Have A Question</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        203 Fake St.Mountain View, San Francisco, California, USA
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +84545 37534 48
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@domain.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home | Emerald Hotel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="main.css"> -->
+        <link rel="stylesheet" href="/main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "/images/poojana.png" type = "image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <!-- <span>GEEKPROBIN</span> -->
+                    <img src = "/images/poojana.png" alt = "room image" style="width: 90px;">  
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>"Luxury is in the details, and <br> we've perfected every one for you.".</p>                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "index.html">home</a></li>
+                <li><a href = "branches.html">Branches</a></li>
+                <li><a href = "adventure.html">Adventures</a></li>
+                <li><a href = "resturant.html">Resturant</a></li>
+                <li><a href = "/event1.html">Event 01</a></li>
+            </ul>
+            <a href="/room booking.html"><button class = "btn sign-up" onclick="book();">Booking</button></a>
+            
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>Indulge in a world-class culinary experience at our hotel. Our food service is a true embodiment of taste, quality, and impeccable service. We take pride in offering an extensive menu crafted by our talented chefs, featuring a diverse range of cuisines to satisfy every palate.</p>                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Discover the art of refreshment at its finest. Whether you crave a revitalizing sip or a satisfying bite, our refreshment offerings are crafted to invigorate your senses. From perfectly brewed beverages to delectable snacks, we provide a delightful oasis for your moments of relaxation and rejuvenation. Explore our menu and elevate your day with a refreshing experience like no other. At [Your Refreshment Brand], we believe that a little indulgence can make a big difference. Cheers to feeling refreshed, one sip at a time!</p>                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Welcome to the heart of hospitality – our housekeeping team is dedicated to ensuring your stay is nothing short of exceptional. Immaculate cleanliness, meticulous attention to detail, and a commitment to your comfort define our housekeeping services. From spotless rooms to well-organized spaces, we take pride in creating an inviting environment for your relaxation. At [Your Hotel or Property Name], we understand that a clean and cozy space is the foundation of a memorable experience. Trust our experienced housekeeping professionals to make your stay truly exceptional. Because when you stay with us, you're not just a guest; you're family</p>                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>At EMERALD, we take your safety and peace of mind seriously. Our room security measures are designed to ensure that your stay is not only comfortable but also secure. We employ state-of-the-art security systems and protocols to safeguard your belongings and provide a safe environment during your visit. From secure key card access to vigilant staff, we leave no stone unturned in ensuring your safety. Relax and enjoy your stay, knowing that your well-being is our top priority. When you choose us, you're choosing a secure haven away from home.</p>                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+        <!-- <section class="rooms customers1" id = "customers">
+        
+            <div class="sec-width">
+                
+                <h2>Rooms</h2>
+                
+            </div>
+
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>SUPER DELUXE SUIT</h3>
+                                <p>
+                                    <ul>
+                                        <li>King-Size Bed: Sink into the plush embrace of a king-size bed with premium linens, ensuring a restful night's sleep.</li>
+                                        <li>Generous Space: Spread out and unwind in an expansive room that provides ample space to relax and work.</li>
+                                    </ul> 
+                                </p>                               
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                        <div class="text">
+                  <h2>Suporior Rooms</h2>
+                  
+                  <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+                  </p>
+                  <div class="button flex">
+                    <button class="primary-btn">BOOK NOW</button>
+                    <h3>$250 <span> <br> Per Night </span> </h3>
+                  </div>
+                </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>Superior Room</h3>
+                                <p>
+                                    <ul>
+                                        <li>Similar to deluxe rooms but often located in more desirable parts of the hotel or offering better views.</li>
+                                        <li>Enhanced Amenities: Find additional in-room amenities, such as a minibar, coffee/tea maker, and sometimes a small seating area.</li>
+                                    </ul>
+                                </p>                                
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>We Loved it</h3>
+                                <p>hhh</p>
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>We Loved it</h3>
+                                <p>hhh</p>
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>We Loved it</h3>
+                                <p>hhh</p>
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>We Loved it</h3>
+                                <p>hhh</p>
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>We Loved it</h3>
+                                <p>hhh</p>
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <div class="customer1">
+                                <div class="rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>We Loved it</h3>
+                                <p>hhh</p>
+                                <img src="images/wr.jpg" alt="customer image">
+                                <span>Customer Name, Country</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>Accommodation</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>SUPER DELUXE SUIT</h3>                        
+                        <p>
+                            <ul>
+                                <li>King-Size Bed: Sink into the plush embrace of a king-size bed with premium linens, ensuring a restful night's sleep.</li>
+                                <li>Generous Space: Spread out and unwind in an expansive room that provides ample space to relax and work.</li>
+                            </ul>
+                        </p>
+                        <img src = "/images/Home/WhatsApp Image 2023-09-11 at 12.20.20 PM.jpeg" alt = "customer image">
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Family Room</h3>
+                        <p>Designed to accommodate families, these rooms often have extra beds or pull-out sofas.</p>
+                        <img src = "/images/Home/WhatsApp Image 2023-09-11 at 12.20.35 PM.jpeg" alt = "customer image">
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Superior Room</h3>
+                        <p>
+                            <ul>
+                                <li>Similar to deluxe rooms but often located in more desirable parts of the hotel or offering better views.</li>
+                                <li>Enhanced Amenities: Find additional in-room amenities, such as a minibar, coffee/tea maker, and sometimes a small seating area.</li>
+                            </ul>
+                        </p>
+                        <img src = "/images/Home/WhatsApp Image 2023-09-11 at 12.25.21 PM.jpeg" alt = "customer image">
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>

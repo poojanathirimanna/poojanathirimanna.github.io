@@ -1,0 +1,279 @@
+/* styel booking page (START) */
+/* style room booking page */
+.room_page_adventuara_booking{
+    opacity: 0.4;
+}
+
+.room_page_adventuara_booking:hover{
+    opacity: 1;
+}
+
+.booking_main_container{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.room_page_booking_types{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 30px 0;
+    text-transform: uppercase;
+}
+
+.room_booking{
+    border-right: 1px solid rgba(128, 128, 128, 0.757);
+    padding-right: 253px;
+}
+
+h2, h4{
+    padding: 10px 0 10px 10px;
+}
+
+.room_section input, .guest_infor input{
+    height: 40px;
+    width: 303px;
+}
+
+select{
+    height: 40px;
+    width: 303px;
+}
+
+/* style room section */
+.room_section{
+    margin: 50px 0 50px 0;
+    box-shadow: -5px -5px 30px #80808099, 5px 5px 30px #80808099;
+    background-color: rgb(205 205 205 / 40%);}
+
+.cheacking_dates{
+    display: flex;
+    margin: 0 0 50px 100px;
+}
+
+.cheack_btn{
+    display: flex;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.cheack_btn_flex{
+    padding-right: 10px;
+}
+
+.booking_input{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 90px;
+}
+
+.room_type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.room_type label{
+    padding: 10px 0 10px 10px;
+}
+
+.room_price{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.room_price{
+    margin: 10px 0 10px 10px;
+}
+
+.room_add_btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.room_add_btn button{
+    margin: 10px 0 10px 10px;
+}
+
+/* style guest information */
+.guest_infor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0 50px 0;
+    box-shadow: -5px -5px 30px #80808099, 5px 5px 30px #80808099;
+    background-color: rgb(205 205 205 / 40%);}
+
+.name_titel{
+    margin-right: 33px;
+}
+
+.first_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0 20px 100px;
+}
+
+.second_row{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.name_flex {
+    margin-top: 5px;
+}
+
+.third_row{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.forth_row{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+/* style payment section */
+.cheack_btn_flex input{
+    height: 40px;
+    width: 303px;
+}
+
+.payment_card_details input{
+    height: 40px;
+    width: 303px;
+}
+
+#card_expire_num{
+    height: 25px;
+    width: 50px;
+    margin-top: 23px;
+}
+
+
+.payment_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0 50px 0;
+    box-shadow: -5px -5px 30px #80808099, 5px 5px 30px #80808099;
+    background-color: rgb(205 205 205 / 40%);}
+
+.payment_method .payment_method_items{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.payment_section .payment_method_flex{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px 100px;
+}
+
+.payment_section .payment_method_type{
+    padding: 5px;
+}
+
+.card_details_section{
+    display: flex;
+}
+
+.card_details{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px 100px;
+}
+
+.card_details_input{
+    display: flex;
+}
+
+.card_details_flex .card_details_input{
+    padding: 5px;
+}
+
+.payment_type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.payment_card_details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0 30px;
+}
+
+.payment_card_details section{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.pay_btn button{
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.pay_btn button:hover{
+    background-color: rgb(181, 147, 63);
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#adventuare_booking_btn{
+    display: none;
+}
+
+
+/* style adventuare booking page */
+.adventuare_page_booking_types{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin: 30px 40px;
+}
+
+.adventuar_page_room_booking{
+    opacity: 0.4;
+}
+
+.adventuar_page_room_booking:hover{
+    opacity: 1;
+}
+
+.adventuara_booking{
+    border-left: 1px solid  rgba(128, 128, 128, 0.757);
+    padding-left: 332px;
+}
+
+.Adv_booking_type{
+    margin: 0 0 50px 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Adv_booking_flex{
+   padding: 5px 60px;
+}
+
+.Adv_booking_flex select{
+    padding: 8px 75px;
+}
+
+.adventuare_request{
+    margin-left: 100px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+}
+
+#room_booking_btn{
+    display: none;
+}

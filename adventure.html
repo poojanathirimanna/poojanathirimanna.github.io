@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Adventure | Emerald Hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="adventure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/poojana.png" type="image/png">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <img src="/images/poojana.png">   
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class = "navbar">
+            <li><a href = "index.html">home</a></li>
+            <li><a href = "branches.html">Branches</a></li>
+           
+            <li><a href = "adventure.html">Adventures</a></li>
+            <li><a href = "resturant.html">Resturant</a></li>
+            <li><a href = "/event1.html">Event 01</a></li>
+
+           
+        </ul>
+        <a href="/room booking.html"><button class = "btn sign-up" onclick="book();">Booking</button></a>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class="services1 sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services1-container">
+            <!-- single service -->
+            <article class="service1">
+                <div class="service1-icon">
+                    <span>
+                        <!-- <i class = "fas fa-utensils"></i> -->
+                    </span>
+                </div>
+                <div class="service1-content">
+                    <!-- <h2>Food Service/ Food Runner</h2> -->
+                    <img src="/images/Adventure/WhatsApp Image 2023-09-11 at 1.14.21 PM.jpeg" alt="" class="img">
+                    <!-- <button type = "button" class = "btn">Know More</button> -->
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service1">
+                <div class="service1-icon">
+
+                </div>
+                <div class="service1-content">
+                    <h2>Warter Rafting</h2>
+                    <p>Prepare for the ultimate aquatic adventure as you take on the roaring rapids with our exhilarating water rafting experiences. Feel the rush of adrenaline as you navigate through twisting, turning, and tumultuous waters, all while surrounded by the breathtaking beauty of nature.</p>
+                    <button type="button" class="btn" onclick="book();">Book Now</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service1">
+
+                <div class="service1-content">
+                    <h2>Sigiriya Rock</h2>
+                    <p>Sigiriya Rock, also known as the "Lion Rock," stands as a testament to the architectural and engineering brilliance of ancient Sri Lanka. This iconic rock fortress is perched majestically amidst lush greenery, offering visitors a glimpse into the island's rich history and natural beauty.</p>
+                    <button type="button" class="btn" onclick="book();">Book Now</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service1">
+
+                <div class="service1-content">
+                    <!-- <h2>Room Security</h2> -->
+                    <img src="/images/Adventure/WhatsApp Image 2023-09-11 at 1.26.00 PM.jpeg" alt="customer image" class="img">
+                    <!-- <button type = "button" class = "btn">Know More</button> -->
+                </div>
+            </article>
+            <!-- end of single service -->
+            <article class="service1">
+                <div class="service1-icon">
+                    <span>
+                        <!-- <i class = "fas fa-utensils"></i> -->
+                    </span>
+                </div>
+                <div class="service1-content">
+                    <!-- <h2>Food Service/ Food Runner</h2> -->
+                    <img src="/images/Adventure/WhatsApp Image 2023-09-11 at 1.27.22 PM.jpeg" alt="" class="img">
+                    <!-- <button type = "button" class = "btn">Know More</button> -->
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service1">
+                <div class="service1-icon">
+
+                </div>
+                <div class="service1-content">
+                    <h2>Hanthana Mountain</h2>
+                    <p>Hanthana Mountain, a gem nestled in the heart of Sri Lanka, beckons adventure seekers and nature enthusiasts with its rugged beauty and lush landscapes. Explore the enchanting trails that wind through its hills and discover the untouched wilderness that makes Hanthana an unforgettable destination.</p>
+                    <button type="button" class="btn" onclick="book();">Book Now</button>
+                </div>
+            </article>
+            <article class="service1">
+
+                <div class="service1-content">
+                    <!-- <h2>Room Security</h2> -->
+                    <!-- <button type = "button" class = "btn">Know More</button> -->
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+
+   
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
+                    provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+            </div>
+
+            <div>
+                <h2>Have A Question</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        203 Fake St.Mountain View, San Francisco, California, USA
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +84545 37534 48
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@domain.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>
