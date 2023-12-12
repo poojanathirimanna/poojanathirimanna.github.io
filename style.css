@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+input {
+    border: none;
+    box-shadow: 4px 4px 25px rgb(0, 0, 0, .2);
+    text-align: center;
+    padding: .5em;
+}
+
+
+.form-elements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em;
+    place-items: center;
+
+}
+
+.form-elements div {
+    padding: .5em;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: .5em;
+}
+
+.form-box {
+    background: rgb(235, 243, 245);
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 4px 4px 25px rgb(0, 0, 0, .2);
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.extra {
+    display: inline-block !important;
+}
+
+#booknowBtn {
+    background: #a0c800;
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    transition: all .5s;
+    box-shadow: 0 0 25px rgb(0, 0, 0, .3);
+}
+
+#booknowBtn:hover {
+    background: #8eb100;
+}
+
+#booknowBtn:active {
+    transform: translateY(2px) scale(.99);
+}
+
+.bookNowArea {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.outputPara {
+    padding: .2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputWarp {
+    padding: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .form-elements {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bookNowArea {
+        flex-direction: column;
+    }
+
+    .outputPara {
+        flex-direction: column;
+    }
+}

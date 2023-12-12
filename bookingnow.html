@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>bookings page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main x-data="app">
+        <form x-on:submit.prevent="$store.user.updateUser">
+            <div class="form-box">
+                <h2> <B>GUEST INFORMATION</B></h2>
+                <div class="form-elements">
+
+                    <div>
+                        <label><b>Title</b></label>
+                        <select id="title" x-model="$store.user.profile.title">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Miss.">Miss.</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label><b>Name:</b></label>
+                        <input type="text" id="Name" x-model="$store.user.profile.name">
+                    </div>
+
+                    <div>
+                        <label><B>Age:</B></label>
+                        <input type="number" id="Age" x-model="$store.user.profile.age">
+                    </div>
+
+                    <div>
+                        <label><B>Email:</B></label>
+                        <input type="text" id="Email" x-model="$store.user.profile.email">
+                    </div>
+
+                    <div>
+                        <label><B>Contact Number</B></label>
+                        <input type="tel" id="contact number" placeholder="+94XXXXXXXXX"
+                            x-model="$store.user.profile.contact_number">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <div>
+                    <label>
+                        <H2><B>ACCOMADATION</B></H2>
+                    </label>
+                    <BR>
+                </div>
+                <div class="form-elements">
+                    <div>
+                        <label><b>Hotel Name</b> </label>
+                        <select id="no_of_Adults" x-model="$store.user.reservation.hotel_name">
+                            <option value="Emerald hotels Colombo">Emerald hotels Colombo</option>
+                            <option value="Emerald hotels Galle">Emerald hotels Galle</option>
+                            <option value="Emerald hotels kandy">Emerald hotels kandy</option>
+                        </select>
+                    </div>
+                    <div></div>
+                    <div>
+                        <label><b>Check In Date:</b></label>
+                        <input type="date" x-model="$store.user.reservation.check_in">
+                    </div>
+
+                    <div>
+                        <label><B>Check Out Date:</B></label>
+                        <input type="date" x-model="$store.user.reservation.check_out">
+                    </div>
+
+                    <div>
+                        <label><b>Single Room:</b></label>
+
+                        <input type="number" min="0" max="99" x-model="$store.user.reservation.number_of_singleRoom">
+                    </div>
+
+                    <div>
+                        <label><b>Double Room:</b></label>
+                        <!-- <label></label> -->
+                        <input type="number" min="0" max="99" x-model="$store.user.reservation.number_of_doubleRoom">
+                    </div>
+                    <div>
+                        <label><B>Triple Room:</B></label>
+                        <!-- <label></label> -->
+                        <input type="number" min="0" max="99" x-model="$store.user.reservation.number_of_tripleRoom">
+                    </div>
+
+                    <div>
+                        <label><b>Kids above 5 years of age </b></label>
+                        <input type="number" min="0" max="99"
+                            x-model="$store.user.reservation.Kids_above_5_years_of_age">
+                    </div>
+
+                    <div>
+                        <label><B>No of kids</B></label>
+                        <select id="no_of_kids" x-model="$store.user.reservation.no_of_kids">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label><b>No of adults</b></label>
+                        <select id="no_of_adults" x-model="$store.user.reservation.no_of_adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-box">
+                <div>
+                    <LABEL><b>
+                            <h3>Extra Amenities </h3>
+                        </b></LABEL>
+                </div>
+
+                <div class="form-elements">
+                    <div class="extra">
+                        <label>Extra Bed</label>
+                        <select id="extra_beds" x-model="$store.user.reservation.extra_beds">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="extra">
+                        <label><b>View :</b></label>
+                        <br>
+                        <label>Pool View</label>
+                        <input type="checkbox" x-model="$store.user.reservation.pool_view">
+                        <br>
+                        <label>Garden View</label>
+                        <input type="checkbox" x-model="$store.user.reservation.garden_view">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bookNowArea">
+                <div>
+                    <label><b>PROMO CODE:</b></label>
+                    <input type="text" x-model="$store.user.reservation.promo_code">
+                </div>
+                <button type="submit" id="booknowBtn" x-on:click="cal_loyality_points"><B>BOOK NOW</B></button>
+            </div>
+        </form>
+
+        <form x-on:submit.prevent="$store.adventure.updateAdventure">
+            <div class="form-box">
+                <h2><b>ADVENTURE BOOKINGS</b></h2>
+                <div class="form-elements">
+
+                    <div>
+                        <label><b>Adventure type</b> </label>
+                        <select id="ADVENTURE_TYPE" x-model="$store.adventure.bookings.adventure_type">
+                            <option value="Scuba Diving">Scuba Diving</option>
+                            <!-- <option value="Hanthana Mountain">Hanthana Mountain</option> -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label><b>Check In Date:</b></label>
+                        <input type="date" x-model="$store.adventure.bookings.date">
+                    </div>
+
+                    <div>
+                        <label><b>Local Guests:</b></label>
+                        <input type="number" x-model="$store.adventure.bookings.local_guests">
+                    </div>
+
+                    <div>
+                        <label><b>Foreign Guests:</b></label>
+                        <input type="number" x-model="$store.adventure.bookings.foreign_guests">
+                    </div>
+
+                    <div>
+                        <label><b>Local Children:</b></label>
+                        <input type="number" x-model="$store.adventure.bookings.local_kids">
+                    </div>
+
+                    <div>
+                        <label><b>Foreign Children:</b></label>
+                        <input type="number" x-model="$store.adventure.bookings.foreign_kids">
+                    </div>
+                    <div>
+                        <label><b>Guide Preference</b></label>
+                        <label>Adult Guide</label>
+                        <input type="number" x-model="$store.adventure.bookings.adult_guide">
+                        <label>Kid guide</label>
+                        <input type="number" x-model="$store.adventure.bookings.kid_guide">
+                    </div>
+                    <button type="submit" id="booknowBtn"><B>BOOK NOW</B></button>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <h2>Booking Summary</h2>
+                <div class="outputWarp">
+                    <div class="outputPara">
+                        <div>
+                            <label>Hotel Name:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.hotel_name"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Cost of Single Rooms x</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.number_of_singleRoom"></span>:
+                            <span x-text="$store.user.reservation.number_of_singleRoom * 25000"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Cost of Double Rooms x</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.number_of_doubleRoom"></span>:
+                            <span x-text="$store.user.reservation.number_of_doubleRoom * 35000"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Cost of Triple Rooms x</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.number_of_tripleRoom"></span>:
+                            <span x-text="$store.user.reservation.number_of_tripleRoom * 40000"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Check In:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.check_in"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Check Out:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.check_out"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Extra bed:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.extra_beds"></span>
+                            <span x-text="$store.user.reservation.extra_beds*8000"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Kids above 5 years of age:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.user.reservation.Kids_above_5_years_of_age"></span>
+                            <span x-text="$store.user.reservation.Kids_above_5_years_of_age* 5000"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Adventure Type:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.adventure_type"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Check In:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.date"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Local Guests:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.local_guests"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Local Kids:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.local_kids"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Foreign Guests:</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.foreign_guests"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Foreign Kids</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.foreign_kids"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Local Guide</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.adult_guide"></span>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Kid Guide</label>
+                        </div>
+                        <div>
+                            <span x-text="$store.adventure.bookings.kid_guide"></span>
+
+
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Loyality_Points:<span x-text="loyality_points"></span><br></label>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>   
+                    <div class="outputPara">
+                        <div>
+                            <label>Accommodation:<span x-text="total_accomadation_cost"></span><br></label>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label> Adventure:<span x-text="total_adventure_cost"></span></label>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>reservation:<span x-text="total_costs"></span></label>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>Total Discount:<span x-text="$store.user.reservation.total_discount"></span></label>
+                        </div>
+                    </div>
+                    <div class="outputPara">
+                        <div>
+                            <label>final bill:<span x-text="$store.user.reservation.final_total"></span></label>
+                        </div>
+                    </div>
+
+                     
+                     
+
+
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+    <script src="/user.js"></script>
+    <script src="/adventure.js"></script>
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('app', () => ({
+                coupons: [
+                    'Promo123'
+                ],
+
+                loyality_points: 0,
+
+                cal_loyality_points() {
+
+                    if (this.$store.user.reservation.number_of_singleRoom >= 3) {
+                        this.loyality_points = parseInt(this.loyality_points) + 20;
+                    }
+                    if (this.$store.user.reservation.number_of_doubleRoom >= 3) {
+                        this.loyality_points = parseInt(this.loyality_points) + 20;
+                    }
+                    if (this.$store.user.reservation.number_of_tripleRoom >= 3) {
+                        this.loyality_points = parseInt(this.loyality_points) + 20;
+                    }
+                    localStorage.setItem('loyality_points', this.loyality_points);
+                },
+                
+                init() {
+                    if (localStorage.getItem('loyality_points') != null) {
+                        this.loyality_points = localStorage.getItem('loyality_points');
+                    }
+                    this.$watch('$store.user.reservation.promo_code' , (value) => {
+                        if(this.coupons.includes(value)){
+                            this.$store.user.reservation.discount_percentage = 5;
+                        } else {
+                            this.$store.user.reservation.discount_percentage = 0;
+                        }
+                    })
+                },
+
+                get total_adventure_cost() {
+                    let total = 0;
+                    total += this.$store.adventure.bookings.local_guests * 5000;
+                    total += this.$store.adventure.bookings.local_kids * 10000;
+                    total += this.$store.adventure.bookings.foreign_guests * 2000;
+                    total += this.$store.adventure.bookings.foreign_kids * 5000;
+                    total += this.$store.adventure.bookings.adult_guide * 1000;
+                    total += this.$store.adventure.bookings.kid_guide * 500;
+                    this.$store.user.reservation.final_adventure_cost = total;
+                    return total;
+                },
+
+                get total_accomadation_cost() {
+                    let total = 0;
+                    total += this.$store.user.reservation.number_of_singleRoom * 25000;
+                    total += this.$store.user.reservation.number_of_doubleRoom * 35000;
+                    total += this.$store.user.reservation.number_of_tripleRoom * 40000;
+                    total += this.$store.user.reservation.extra_beds * 8000;
+                    total += this.$store.user.reservation.Kids_above_5_years_of_age * 5000;
+                    this.$store.user.reservation.final_accommodation = total;
+                    return total;
+                },
+
+                get total_costs(){
+                    let total = 0;
+                    total+=this.total_accomadation_cost;
+                    total+=this.total_adventure_cost;
+                    this.$store.user.reservation.total_cost = total;
+                    
+                    this.$store.user.reservation.total_discount = total * (this.$store.user.reservation.discount_percentage/100);
+                    this.$store.user.reservation.final_total = total - this.$store.user.reservation.total_discount;
+                    
+                    return total;
+                },
+
+
+
+            }));
+        })
+    </script>
+</body>
+
+</html>

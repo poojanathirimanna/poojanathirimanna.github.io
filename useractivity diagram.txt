@@ -1,0 +1,16 @@
+Enter the name and the details of the guest
+Choose the hotel 
+Select the date 
+Select the room type and the number of rooms needed
+select the no of kids and adults
+select extra amentities you want
+Enter the promo code 
+Show the loyality points
+Select the adventure type ,
+Select the adventure date 
+no of local and foreign adults and kids
+select the guide type u need
+if the details are correct press the book now button 
+Enter the payement details
+if the payment details are correct the booking is confirmed and it must be displayed 
+save the deatils by clicking and save your deatils
